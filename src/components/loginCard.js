@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import styles from '../styles/login.module.css';
 import { Form, Button } from 'react-bootstrap';
-import Todo from './todo';
 import { Link } from 'react-router-dom';
 
 class LoginCard extends Component {

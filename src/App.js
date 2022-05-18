@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/header';
 import Login from './components/login';
-import Todo from './components/todo';
+import { Todo } from './components/todo';
 
 function App() {
   return (

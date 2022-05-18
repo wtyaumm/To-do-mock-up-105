@@ -1,4 +1,29 @@
 .box {
-    width: 1388px;
     background-color: #F7F7F7;
+    height: 100vh;
+    margin: 20px 10px 0px 10px;
+    border-radius: 25px 25px 0px 0px;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.addTodo {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+}
+
+.type {
+    border-radius: 12px !important; 
+    width: 300px !important;
 }
