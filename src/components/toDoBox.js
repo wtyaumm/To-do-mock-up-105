@@ -9,14 +9,19 @@ export const ToDoBox = ({ name, date, status, handdleStatus }) => {
 
     return (
         <div className={styles.box} onClick={handdleStatus}>
-            <div>{name}</div>
+            <div className={styles.name}>{name}</div>
             <div className={styles.date}>
                 <CalendarTodayIcon />
-                {formattedDate}
+                <span>
+                    {formattedDate}
+                </span>
             </div>
             <div className={styles.date}>
                 {status ? <CheckIcon className={styles.check} /> : <ClearIcon className={styles.clear} />}
-                {status ? "Done" : "Undone"}</div>
+                <span>
+                    {status ? "Done" : "Undone"}
+                </span>
+            </div>
         </div>
     )
 }

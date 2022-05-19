@@ -8,9 +8,19 @@
     border-radius: 15px;
 }
 
+.name {
+    width: 50%;
+}
+
 .date {
     display: flex;
     align-items: center;
+    width: 25%;
+    justify-content: center;
+}
+
+.date > span {
+    margin-left: 0.5rem;
 }
 
 .clear {
