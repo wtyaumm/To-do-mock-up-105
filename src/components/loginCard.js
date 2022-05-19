@@ -18,7 +18,7 @@ class LoginCard extends Component {
                             </Form.Group>
                             <Form.Group >
                                 <Form.Label className={styles.textLabel}>PASSWORD</Form.Label>
-                                <Form.Control type='text' className={styles.formControl}></Form.Control>
+                                <Form.Control type='password' className={styles.formControl}></Form.Control>
                                 <Form.Text><a href='/' className={styles.link}>Forget your password?</a></Form.Text>
                             </Form.Group>
                         </Form>
