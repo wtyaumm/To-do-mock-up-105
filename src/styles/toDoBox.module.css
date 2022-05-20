@@ -1,38 +1,70 @@
 .box {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+
+  animation: push 0.3s cubic-bezier(0.89, 0.03, 0.36, 1.11) 1;
+}
+@keyframes push {
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .name {
-    width: 50%;
+  width: 50%;
 }
 
 .date {
-    display: flex;
-    align-items: center;
-    width: 25%;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 25%;
+  justify-content: center;
 }
 
 .date > span {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .clear {
-    background-color: indianred;
-    border-radius: 50%;
-    padding: 3px;
-    color: white;
+  background-color: indianred;
+  border-radius: 50%;
+  padding: 3px;
+  color: white;
+  animation: fadeIn ease-in-out 0.75s;
 }
 
 .check {
-    background-color: rgb(124, 226, 158);
-    border-radius: 50%;
-    padding: 3px;
-    color: white;
+  background-color: #7ce29e;
+  border-radius: 50%;
+  padding: 3px;
+  color: white;
+
+  animation: fadeIn ease-in-out 0.75s;
+  animation-direction: reverse;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: rotateY(0deg);
+    background-color: #7ce29e;
+  }
+
+  49.9% {
+    background-color: #7ce29e;
+  }
+
+  50% {
+    background-color: indianred;
+  }
+
+  100% {
+    transform: rotateY(360deg);
+    background-color: indianred;
+  }
 }

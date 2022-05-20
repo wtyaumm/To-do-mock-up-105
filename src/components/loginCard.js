@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from '../styles/login.module.css';
-import { Form, Button } from 'react-bootstrap';
+import { Form, FormGroup, Label, FormText, Input, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class LoginCard extends Component {
@@ -12,15 +12,15 @@ class LoginCard extends Component {
                         <p className={styles.welcome}>Welcome back</p>
                         <p className={styles.text}>We're so excited to sleep again ;-;</p>
                         <Form>
-                            <Form.Group>
-                                <Form.Label className={styles.textLabel}>EMAIL OR PHONE NUMBER</Form.Label>
-                                <Form.Control type='text' className={styles.formControl}></Form.Control>
-                            </Form.Group>
-                            <Form.Group >
-                                <Form.Label className={styles.textLabel}>PASSWORD</Form.Label>
-                                <Form.Control type='password' className={styles.formControl}></Form.Control>
-                                <Form.Text><a href='/' className={styles.link}>Forget your password?</a></Form.Text>
-                            </Form.Group>
+                            <FormGroup>
+                                <Label className={styles.textLabel}>EMAIL OR PHONE NUMBER</Label>
+                                <Input type='text' className={styles.formControl}></Input>
+                            </FormGroup>
+                            <FormGroup >
+                                <Label className={styles.textLabel}>PASSWORD</Label>
+                                <Input type='password' className={styles.formControl}></Input>
+                                <FormText><a href='/' className={styles.link}>Forget your password?</a></FormText>
+                            </FormGroup>
                         </Form>
                         <Link to='/todo'><Button type='submit' className={styles.button}>Login</Button></Link>
                         <p className={styles.register}>Need an account?<a href='/' className={styles.link}> Register</a></p>
